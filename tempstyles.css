@@ -1,3 +1,9 @@
+* {
+    margin: 0%;
+
+
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -7,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #4682b4; /* SteelBlue */
+    background-color: #509bda;
     color: white;
     padding: 1em 0;
 }
@@ -36,7 +42,7 @@ nav a:hover {
     background-color: #5f9ea0; /* CadetBlue */
 }
 
-.container {
+.homepage_container {
     max-width: 960px;
     margin: 20px auto;
     padding: 20px;
@@ -60,7 +66,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #4682b4; /* SteelBlue */
+    background-color: #509bda;
     color: white;
     text-align: center;
     padding: 1em 0;
