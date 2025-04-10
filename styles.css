@@ -105,7 +105,30 @@ nav a {
 /* Navigation Bar End */
 
 
+/* Home Page Begins */
+.homepage_container {
+    max-width: 65%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.content {
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.content h1, .content h2 {
+    color: #4682b4; /* SteelBlue */
+    margin-bottom: 0.5em;
+}
+
+.content ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+/* Home Page Ends */
 
 
 #pd-opportunity-title{
@@ -237,4 +260,5 @@ nav a {
     text-align: center;
     color: white;
 }
+
 /* Footer End  */
