@@ -9,10 +9,9 @@ body{
     margin: 0;
     padding: 0px;
 }
-main{
-    max-width:1200px;
-    margin: auto;
-    
+.jobs-container{
+    max-width:1280px;
+    margin: auto; 
 }
 
 
@@ -30,11 +29,7 @@ main{
 
 
 
-/* Navigation Bar Start*/
-
-
-
-/* Navigation Bar End */
+/* -----------------------------Job Style Start-------------------------- */
 
 
 
@@ -61,7 +56,7 @@ main{
 
 
 /* Styles for First Job */
-#job-position-1{
+.job-position-1{
     max-width: 65%;
     background-color: white;
     padding: 2em;
@@ -71,7 +66,7 @@ main{
 }
 
 
-#pd-job-1 h3{
+.pd-job-1 h3{
     font-size: 1.8em;
 }
 .ref{
@@ -92,6 +87,9 @@ main{
 .reports-to{
     margin: 1em 0 0 0;
 }
+.pd-list{
+    margin-bottom: 1.5em;
+}
 .pd-list li{
     margin: 1em;
 }
@@ -99,7 +97,7 @@ main{
 
 
 /* Requirement Start */
-#pd-requirements-title{
+.pd-requirements-title{
     margin-top: 2em;
     font-size: 1.3em;
 }
@@ -110,13 +108,15 @@ main{
 .pd-salary{
     font-size: 1.3em;
     font-weight: bold;
+    margin-bottom: .5em;
 }
 /* Salary Range End */
 
 
 
 /* Apply btn start */
-#pd-apply-btn{
+.pd-apply-btn{
+    text-decoration: none;
     font-size: larger;
     color: white;
     background-color: #34495e;
@@ -124,10 +124,10 @@ main{
     padding: .6em 2em;
     font-weight: bold;
     border-radius: 9px;
-    margin: .5em 0;
+    
 }
 
-#pd-apply-btn:hover{
+.pd-apply-btn:hover{
     background-color: white;
     color: #34495e;
     border: 3px solid #34495e;
@@ -147,7 +147,7 @@ main{
     width: 25%;
     border: 1px solid salmon;
     background-color: #e8f4fc;
-    padding: 1.5em 0 1.5em 1.5em;
+    padding: 1.5em 1em 1.5em 1.5em;
     border: 2px solid #c9d6df;
     border-radius: 8px;
     position: sticky;
@@ -170,3 +170,41 @@ main{
     color: white;
 }
 /* Footer End  */
+
+
+/* responsive */
+@media screen and (max-width:992px) {
+    
+.jobs-container{
+    max-width:100%;
+}
+
+
+.job-position-1{
+    max-width: 60%;
+}
+
+}
+
+
+@media screen and (max-width:576px) {
+    .job-position-1{
+        max-width: 100%;
+    }
+    .benefits{
+        float: none;
+        display: none;
+    }
+}
+
+/* -----------------------------Job Style End-------------------------- */
+
+
+
+
+
+
+
+/* -----------------------------About Style Start-------------------------- */
+
+/* -----------------------------About Style End-------------------------- */
