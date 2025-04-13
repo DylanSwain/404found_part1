@@ -20,40 +20,50 @@ main{
 
 
 
-/* Navigation Bar Start*/
+/* Navigation Bar Styling Start*/
+
 header {
     background-color: #509bda;
     color: white;
-    padding: 1em 0;
+    padding: 0.1% 0;
+    font-size: 20px;
 }
 
 nav {
-    background-color: #509bda;
+    display: flex;
+    align-items: center;
+    padding: 0 1%;
 }
-
 
 nav ul {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     padding-left: 0;
-
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    justify-content: space-around;
 }
+
 
 nav a {
     text-decoration: none;
     color: white;
+    display: block;
+    padding: 4px 0px;
 }
 
 .link {
     position: relative;
     list-style: none;
-    padding: 4px 0;
+    padding: 0px 0;
 }
 
-/* .link:hover .dropdown-content {
-    display: block;
-} */
+.logo {
+    width: auto;
+    height: auto;
+    max-height: 75px;
+}
 
 .link::after,
 .link::before {
@@ -63,6 +73,7 @@ nav a {
     height: 2px;
     background-color: white;
     transition: all 0.6s ease-in-out;
+
 }
 
 .link::after {
@@ -87,21 +98,25 @@ nav a {
 }
 
 .link.active::after {
-    width: 0; /* Or whatever the initial width is when not hovered */
+    width: 0;
 }
 
 
 
-/* Navigation Bar End */
+/* Navigation Bar Styling End */
 
 
-/* Home Page Begins */
+/* Home Page Styling Begins */
+
 .homepage_container {
-    max-width: 65%;
+    max-width: 992px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 1058px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .content {
@@ -118,7 +133,20 @@ nav a {
     list-style-type: square;
     padding-left: 20px;
 }
-/* Home Page Ends */
+
+
+.pd-index-title{
+    text-align: center;
+}
+.pd-index-title h2{
+    padding: 1.5em 0em;
+    font-size: 2em;
+}
+.pd-index-title p{
+    margin-bottom: 3em;
+}
+
+/* Home Page Styling Ends */
 
 
 /* -----------------------------Job Style Start-------------------------- */
@@ -275,6 +303,8 @@ nav a {
     margin: auto;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 /* Footer End  */
 
