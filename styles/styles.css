@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0px;
+}
+main{
+    max-width:1280px;
+    margin: auto;
+    
+}
+
+
+
+
+
+
+/* Navigation Bar Styling Start*/
+
+header {
+    background-color: #509bda;
+    color: white;
+    padding: 0.1% 0;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 1%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 4px 0px;
+}
+
+.link {
+    position: relative;
+    list-style: none;
+    padding: 0px 0;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    max-height: 75px;
+}
+
+.link::after,
+.link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.link::after {
+    top: 0;
+    right: 0;
+    transform-origin: right;
+}
+
+.link::before {
+    left: 0;
+    bottom: 0;
+    transform-origin: left;
+}
+
+.link:hover::after,
+.link:hover::before {
+    width: 100%;
+}
+
+.link.active::before {
+    width: 100%;
+}
+
+.link.active::after {
+    width: 0;
+}
+
+
+
+/* Navigation Bar Styling End */
+
+
+/* Home Page Styling Begins */
+
+.homepage_container {
+    max-width: 992px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 1058px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.homepage_content {
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.homepage_content h1, .content h2 {
+    color: #4682b4; /* SteelBlue */
+    margin-bottom: 0.5em;
+}
+
+.homepage_content ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+
+.pd-index-title{
+    text-align: center;
+}
+.pd-index-title h2{
+    padding: 1.5em 0em;
+    font-size: 2em;
+}
+.pd-index-title p{
+    margin-bottom: 3em;
+}
+
+/* Home Page Styling Ends */
+
+
+/* -----------------------------Job Style Start-------------------------- */
+
+/* Colors Start */
+.barbara-blue{
+    color: #2980b9;
+}
+.black-dark{
+    color: #2c3e50;
+}
+.black-light{
+    color: #7f8c8d;
+}
+/* Colors End */
+
+.logo-resize{
+    width: 100px;
+}
+
+
+#pd-opportunity-title{
+    text-align: center;
+    color: white;
+    background-color: #509bda;
+    padding: 1em;
+    font-size: 2em;
+}
+.pd-join-title{
+    text-align: center;
+}
+.pd-join-title h2{
+    padding: 1.5em 0em;
+    font-size: 2em;
+}
+.pd-join-title p{
+    margin-bottom: 3em;
+}
+
+
+
+/* Styles for First Job */
+.job-position-1{
+    max-width: 65%;
+    background-color: white;
+    padding: 2em;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1.5em;
+}
+
+
+.pd-job-1 h3{
+    font-size: 1.8em;
+}
+.ref{
+    margin: .5rem 0 1em 0;
+}
+.pd-description-title{
+    margin: 1.5em 0 .5em 0;
+    font-size: 1.3em;
+    border-bottom: 2px solid rgba(44, 62, 80, 40%);
+}
+
+
+
+/* responsibility Start */
+.pd-responsibility-title{
+    margin: 1.5em 0 .5em 0;
+    font-size: 1.3em;
+    
+}
+.reports-to{
+    margin: 1em 0 0 0;
+}
+.pd-list{
+    margin-bottom: 1.5em;
+}
+.pd-list li{
+    margin: 1em;
+}
+/* responsibility End */
+
+
+/* Requirement Start */
+.pd-requirements-title{
+    margin-top: 2em;
+    font-size: 1.3em;
+}
+/* Requirement End */
+
+
+/* Salary Range Start */
+.pd-salary{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+/* Salary Range End */
+
+
+
+/* Apply btn start */
+.pd-apply-btn{
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    background-color: #34495e;
+    border: 3px solid #34495e;
+    padding: .6em 2em;
+    font-weight: bold;
+    border-radius: 9px;
+    
+}
+
+.pd-apply-btn:hover{
+    background-color: white;
+    color: #34495e;
+    border: 3px solid #34495e;
+    transform: scale(1.1);
+    transition: .3s;
+    
+}
+
+
+/* Apply btn end */
+
+
+
+/* aside */
+.benefits{
+    float: right;
+    width: 25%;
+    border: 1px solid salmon;
+    background-color: #e8f4fc;
+    padding: 1.5em 1em 1.5em 1.5em;
+    border: 2px solid #c9d6df;
+    border-radius: 8px;
+    position: sticky;
+    top: 1rem;
+}
+.benefits h3{
+    margin: 0 0 .5em 0;
+}
+.benefits ul li{
+    margin-bottom: .5em;
+}
+
+/* Footer Start  */
+.pd-footer{
+    /* max-width:1200px; */
+    background-color: #509bda;
+    padding: 1em 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+/* Footer End  */
+
+
+/* responsive */
+@media screen and (max-width:992px) {
+    
+.jobs-container{
+    max-width:100%;
+}
+
+
+.job-position-1{
+    max-width: 60%;
+}
+
+}
+
+
+@media screen and (max-width:576px) {
+    .job-position-1{
+        max-width: 100%;
+    }
+    .benefits{
+        float: none;
+        display: none;
+    }
+}
+
+/* -----------------------------Job Style End-------------------------- */
+
+
+
+
+/* ---------------------------Apply style start------------------------ */
+* {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+body{
+    background-color: #f0f8ff;
+
+}
+#application_header{
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+
+#apply_image {
+    height: 300px;
+    float: right;
+}
+.application {
+    display: flex;
+    max-width: 65%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 3%;
+}
+.form-container{
+    width: 50%;
+}
+#apply_image{
+    width: 50%;
+    height: inherit;
+    opacity:90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.submit-btn{
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    background-color: #34495e;
+    border: 3px solid #34495e;
+    padding: .6em 2.5em;
+    font-weight: bold;
+    border-radius: 9px;
+    
+}
+fieldset{
+    border: 2px solid gray;
+}
+label{
+    font-weight: bold;
+}
+input{
+    border: 2px solid gray;
+}
+legend{
+    font-weight: bold;
+}
+textarea{
+    border: 2px solid gray;
+    width: 600px;    
+    height: 50px;
+}
+/* ---------------------------Apply style end------------------------ */
+
+
+
+
+
+
+
+/* -----------------------------About Style Start-------------------------- */
+.gp-info-container, .contribution-container{
+    display: flex; 
+    gap: 2%;  
+}
+.gp-info-container,
+.contribution-container{
+    margin-bottom: 20px;
+}
+.about-group-info, 
+.about-student-ids, 
+.about-contributions, 
+.group-photo,
+.interests{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 9px;
+    
+}
+.about-group-info, 
+.about-student-ids, 
+.about-contributions, 
+.group-photo
+{
+    width: 45%;
+}
+.about-text-bold{
+    font-weight: bold;
+}
+
+.about-group-info h2{
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(41, 127, 185, 50%);
+}
+.about-time{
+    margin-top: 10px;
+}
+.about-group-info ul li{
+    margin-bottom: 10px;
+}
+
+/* student id start */
+.about-student-ids h2{
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(41, 127, 185, 50%);
+}
+.about-student-ids ul li{
+    margin-bottom: 10px;
+}
+/* student id end */
+
+
+/* contributor start */
+.about-contributions h2 {
+    border-bottom: 2px solid rgba(41, 127, 185, 50%);
+}
+.group-photo h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.group-photo{
+    text-align: center;
+}
+.group-photo-img{
+    border: 3px solid rgba(41, 127, 185, 0.753);
+    width: 90%;
+}
+
+.about-contributions dt{
+    margin-left: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.about-contributions dd{
+    margin-left: 4em;
+
+}
+/* contributor end */
+
+
+/* table start */
+/* Table Styling for Team Interests */
+.interests{
+    width: 95%;
+    margin-bottom: 30px;
+}
+.interest-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+.interest-table caption {
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+  }
+  
+.interest-table thead {
+    background-color: #e2e8f0;
+  }
+  
+.interest-table th,
+.interest-table td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+/* table end */
+
+/* -----------------------------About Style End-------------------------- */
