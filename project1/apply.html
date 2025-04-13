@@ -9,18 +9,19 @@
     <link rel="php" href="https://mercury.swin.edu.au/it000000/formtest.php">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-              <li class="link"><a href="index.html">Home</a></li>
-              <li class="link"><a href="jobs.html">Jobs</a></li>
-              <li class="link"><a href="about.html">About</a></li>
-              <li class="link">
+  <header>
+    <nav>
+        <img src="../images/logo.png" alt="NeuroByte Logo" class="logo">
+        <ul>
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="jobs.html">Jobs</a></li>
+            <li class="link"><a href="about.html">About</a></li>
+            <li class="link">
                 <a href="mailto:info@neurobyte.com.au">info@neurobyte.com.au</a>
-              </li>
-            </ul>
-        </nav>
-    </header>
+            </li>
+        </ul>
+    </nav>
+</header> 
     <h2 id="application_header" class="black-dark" >Register Interest in Job Position</h2>
 
     <main class="application black-dark">
@@ -81,15 +82,15 @@
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" required><br><br>
     
-        <fieldset>
+        <fieldset >
           <legend>Technical Skills (select at least one)</legend>
-          <input type="checkbox" id="html" name="skills" value="HTML" required>
+          <input type="checkbox" id="html" name="skills[]" value="HTML" required>
           <label for="html">HTML</label>
-          <input type="checkbox" id="css" name="skills" value="CSS">
+          <input type="checkbox" id="css" name="skills[]" value="CSS">
           <label for="css">CSS</label>
-          <input type="checkbox" id="js" name="skills" value="JavaScript">
+          <input type="checkbox" id="js" name="skills[]" value="JavaScript">
           <label for="js">JavaScript</label>
-          <input type="checkbox" id="python" name="skills" value="Python">
+          <input type="checkbox" id="python" name="skills[]" value="Python">
           <label for="python">Python</label>
         </fieldset><br>
     
