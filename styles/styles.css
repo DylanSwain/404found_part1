@@ -31,18 +31,24 @@ header {
 
 nav {
     display: flex;
-    align-items: center;
+    max-width: 1280px;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    margin: auto;
     padding: 0 1%;
+    /* border: 2px solid salmon; */
 }
 
 nav ul {
+    /* border: 2px solid salmon; */
+
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: space-between;
     padding-left: 0;
     list-style: none;
-    margin: 0;
-    width: 100%;
-    justify-content: space-around;
+    margin: auto;
+    width: 1280px;
 }
 
 
@@ -52,6 +58,7 @@ nav a {
     display: block;
     padding: 4px 0px;
 }
+
 
 .link {
     position: relative;
@@ -63,6 +70,7 @@ nav a {
     width: auto;
     height: auto;
     max-height: 75px;
+    margin-right: 25px;
 }
 
 .link::after,
@@ -109,7 +117,7 @@ nav a {
 /* Home Page Styling Begins */
 
 .homepage_container {
-    max-width: 992px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
@@ -320,6 +328,12 @@ nav a {
 .job-position-1{
     max-width: 60%;
 }
+.logo{
+    display: none;
+}
+nav ul li{
+    margin: 15px 0;
+}
 
 }
 
@@ -385,6 +399,14 @@ body{
     padding: .6em 2.5em;
     font-weight: bold;
     border-radius: 9px;
+    
+}
+.submit-btn:hover{
+    background-color: white;
+    color: #34495e;
+    border: 3px solid #34495e;
+    transform: scale(1.1);
+    transition: .3s;
     
 }
 fieldset{
