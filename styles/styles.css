@@ -81,6 +81,7 @@ nav a {
     height: 2px;
     background-color: white;
     transition: all 0.6s ease-in-out;
+
 }
 
 .link::after {
