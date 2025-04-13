@@ -119,17 +119,17 @@ nav a {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.content {
+.homepage_content {
     margin-bottom: 2em;
     padding: 1em;
 }
 
-.content h1, .content h2 {
+.homepage_content h1, .content h2 {
     color: #4682b4; /* SteelBlue */
     margin-bottom: 0.5em;
 }
 
-.content ul {
+.homepage_content ul {
     list-style-type: square;
     padding-left: 20px;
 }
