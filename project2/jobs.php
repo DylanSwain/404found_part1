@@ -13,17 +13,7 @@
 <body>
     
     <header>
-        <nav>
-            <img  src="../images/logo.png" alt="NeuroByte Logo" class="logo">
-            <ul>
-                <li class="link"><a href="index.html">Home</a></li>
-                <li class="link active"><a href="jobs.html">Jobs</a></li>
-                <li class="link"><a href="about.html">About</a></li>
-                <li class="link">
-                    <a href="mailto:info@neurobyte.com.au">info@neurobyte.com.au</a>
-                </li>
-            </ul>
-        </nav>
+        <?php include 'nav.inc';?>
     </header> 
 
     <main class="jobs-container">
@@ -101,7 +91,7 @@
 
 
                 <!-- Apply Now -->
-                <a href="apply.html" class="pd-apply-btn">Apply Now</a>
+                <a href="apply.php" class="pd-apply-btn">Apply Now</a>
                 
                 
     
@@ -157,7 +147,7 @@
 
 
                 <!-- Apply Now -->
-                <a href="apply.html" class="pd-apply-btn">Apply Now</a>
+                <a href="apply.php" class="pd-apply-btn">Apply Now</a>
                 
     
             </section>
@@ -178,10 +168,6 @@
 
 
 
-    <footer>
-        <div class="pd-footer">
-            <p>&copy; 2025 NeuroByte. All rights reserved.</p>
-        </div>
-    </footer>
+     <?php include 'footer.inc';?>
 </body>
 </html>
