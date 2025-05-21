@@ -23,143 +23,150 @@
         </section>
 
 
-        <aside class="benefits black-dark">
-            <h3>Employee Benefits</h3>
-            <ul>
-                <li>Competitive salary with performance bonuses</li>
-                <li>Flexible hours and remote work options</li>
-                <li>Health and wellness support</li>
-                <li>Paid annual and sick leave</li>
-                <li>Professional development opportunities</li>
-                <li>Modern office environment</li>
-                <li>Inclusive and supportive team culture</li>
-            </ul>
-        </aside>
+
+        <!-- --------------------------------------------------------------------- -->
+         <section>
+        <?php 
+        require_once("settings.php");
+        $conn = mysqli_connect($host, $username, $password, $database);
+        if(!$conn){
+            echo "<p> Database connection failed: " . mysqli_connect_error() ."</p>";
+        }
+        else{
+            $sql = "SELECT * FROM jobs";
+            $result = mysqli_query($conn, $sql);
+
+
+            if($result && mysqli_num_rows($result) > 0 ){
+                while($row = mysqli_fetch_assoc($result)){
+                    $position_name = htmlspecialchars ($row['position_name']);
+                    $location = htmlspecialchars ($row['location']);
+                    $ref_id = htmlspecialchars ($row['ref_id']);
+                    $job_des = htmlspecialchars ($row['job_des']);
+                    $responsibility_1 = htmlspecialchars ($row['responsibility_1']);
+                    $responsibility_2 = htmlspecialchars ($row['responsibility_2']);
+                    $responsibility_3 = htmlspecialchars ($row['responsibility_3']);
+                    $responsibility_4 = htmlspecialchars ($row['responsibility_4']);
+                    $responsibility_5 = htmlspecialchars ($row['responsibility_5']);
+                    $responsibility_6 = htmlspecialchars ($row['responsibility_6']);
+                    $responsibility_7 = htmlspecialchars ($row['responsibility_7']);
+                    $Requirement_1 = htmlspecialchars ($row['Requirement_1']);
+                    $Requirement_2 = htmlspecialchars ($row['Requirement_2']);
+                    $Requirement_3 = htmlspecialchars ($row['Requirement_3']);
+                    $Requirement_3 = htmlspecialchars ($row['Requirement_3']);
+                    $Requirement_4 = htmlspecialchars ($row['Requirement_4']);
+                    $Requirement_5 = htmlspecialchars ($row['Requirement_5']);
+                    $Requirement_6 = htmlspecialchars ($row['Requirement_6']);
+                    $benefit_1 = htmlspecialchars ($row['benefit_1']);
+                    $benefit_2 = htmlspecialchars ($row['benefit_2']);
+                    $benefit_3 = htmlspecialchars ($row['benefit_3']);
+                    $benefit_4 = htmlspecialchars ($row['benefit_4']);
+                    $benefit_5 = htmlspecialchars ($row['benefit_5']);
+                    $benefit_6 = htmlspecialchars ($row['benefit_6']);
+                    $reports_to = htmlspecialchars ($row['reports_to']);
+                    $salary = htmlspecialchars ($row['salary']);
 
 
 
 
-        <!-- Job position 1 Start -->
-
-        <div class="job-position-1">
-            <section class="pd-job-1">
-                <h3 class="barbara-blue">Software Developer</h3>
-                <p class="black-light"><em>Location: Melbourne VIC</em></p>
-                <p class="black-dark ref"><em>Ref ID: REF002</em></p>
-
-                <!-- Description -->
-                <h4 class="pd-description-title black-dark">Job Description</h4>
-                <p class="black-dark ">We’re looking for a skilled and motivated Software Developer to join our growing team. In this role, you'll be responsible for designing, developing, testing, and maintaining scalable and efficient software solutions. You'll work closely with other developers, designers, and product managers to bring ideas to life and ensure our products meet the highest standards of quality and performance.</p> <!--need to update this-->
-                <p class="reports-to black-dark"><em><strong>Reports to:</strong> Lead Developer</em></p>
-    
-
-
-                <!-- Responsibility -->
-                <h4 class="pd-responsibility-title black-dark">Responsibilities</h4>
-                <ul class="pd-list black-dark">
-                    <li>Develop and maintain web or applications</li>
-                    <li>Debug and resolve technical issues across platforms</li>
-                    <li>Review and provide feedback on code written by peers</li>
-                    <li >Mentor junior developers and conduct code reviews</li>
-                    <li>Collaborate with product managers and designers</li>
-                    <li>Optimize applications for maximum speed and scalability</li>
-                    <li>Implement security and data protection measures</li>
-                    <li>tay up-to-date with emerging technologies and industry trends</li>            
-                </ul>
+                    // Employee Benefits
+                    echo"<aside class='benefits black-dark'>";
+                        echo"<h3>Employee Benefits</h3>";
+                        echo"<ul>";
+                            echo"<li>$benefit_1</li>";
+                            echo"<li>$benefit_2</li>";
+                            echo"<li>$benefit_3</li>";
+                            echo"<li>$benefit_4</li>";
+                            echo"<li>$benefit_5</li>";
+                            echo"<li>$benefit_6</li>";
+                        echo"</ul>";
+                    echo"</aside>";
 
 
 
-                <!-- Requirements -->
-                <h5 class="pd-requirements-title black-dark">Requirements</h5>
-                <ol class="pd-list black-dark">
-                    <li >Bachelor's degree in Computer Science or related field</li>
-                    <li>5+ years of software development experience</li>
-                    <li>Proficiency in JavaScript, Python, Java, or similar</li>
-                    <li>Experience with frameworks/libraries like React, Angular, .NET, Django, or Node.js</li>
-                    <li>Experience with cloud platforms (AWS, Azure, or GCP)</li>
-                    <li>Familiarity with version control systems, especially Git</li>
-                    <li>Strong problem-solving skills and attention to detail</li>
-                </ol>
+                    // <!-- Job position 1 Start -->
+
+                    echo"<div class='job-position-1'>";
+                        echo"<section class='pd-job-1'>";
+                            echo"<h3 class='barbara-blue'>$position_name</h3>";
+                            echo"<p class='black-light'><em>Location: $location</em></p>";
+                            echo"<p class='black-dark ref'><em>Ref ID: $ref_id</em></p>";
+
+                            // <!-- Description -->
+                            echo"<h4 class='pd-description-title black-dark'>Job Description</h4>";
+                            echo"<p class='black-dark'>$job_des</em></p>";
+                            echo"<p class='reports-to black-dark'><em><strong>Reports to:</strong> $reports_to</em></p>";
                 
+
+
+                            // <!-- Responsibility -->
+                            echo"<h4 class='pd-responsibility-title black-dark'>Responsibilities</h4>";
+                            echo"<ul class='pd-list black-dark'>";
+                                echo"<li>$responsibility_1</li>";
+                                echo"<li>$responsibility_2</li>";
+                                echo"<li>$responsibility_3</li>";
+                                echo"<li>$responsibility_4</li>";
+                                echo"<li>$responsibility_5</li>";
+                                echo"<li>$responsibility_6</li>";
+                                echo"<li>$responsibility_7</li>";
+                            echo"</ul>";
+
+
+
+                            // <!-- Requirements -->
+                            echo"<h5 class='pd-requirements-title black-dark'>Requirements</h5>";
+                            echo"<ol class='pd-list black-dark'>";
+                                echo"<li >$Requirement_1</li>";
+                                echo"<li>$Requirement_2</li>";
+                                echo"<li>$Requirement_3</li>";
+                                echo"<li>$Requirement_4</li>";
+                                echo"<li>$Requirement_5</li>";
+                                echo"<li>$Requirement_6</li>";
+                            echo"</ol>";
+                            
+                            
+                            
+                            // <!-- Salary -->
+                            echo"<h4 class='pd-responsibility-title black-dark'>Salary Range</h4>";
+                            echo"<ul class='pd-list black-dark'>";
+                                echo"<li>$salary per year</li>";
+                            echo"</ul>";
+
+
+                            // <!-- Apply Now -->
+                            echo"<a href='apply.php' class='pd-apply-btn'>Apply Now</a>";
+                            
+                            
                 
-                
-                <!-- Salary -->
-                <h4 class="pd-responsibility-title black-dark">Salary Range</h4>
-                <ul class="pd-list black-dark">
-                    <li>$50,000 - $ 70, 000 per year</li>
-                </ul>
+                        echo"</section>";
+                    echo"</div>";
+                    // <!-- Job position 1 end -->
+
+                    // ----------------------------------------------
+
+                    
+                }
+            }
+            else{
+                echo"<p>No friends</p>";
+            }
+            mysqli_close($conn);
+        }
+    ?>
+    </section>
+        <!-- --------------------------------------------------------------------- -->
 
 
-                <!-- Apply Now -->
-                <a href="apply.php" class="pd-apply-btn">Apply Now</a>
-                
-                
-    
-            </section>
-        </div>
-        <!-- Job position 1 end -->
-
-
-
-
-        <!-- Job position 2 Start -->
-        <div class="job-position-1">
-            <section class="pd-job-1">
-                <h3 class="barbara-blue">Font-End Web Developer</h3>
-                <p class="black-light"><em>Location: Melbourne VIC</em></p>
-                <p class="black-dark ref"><em>Ref ID: REF003</em></p>
-
-                <!-- Description -->
-                <h4 class="pd-description-title black-dark">Job Description</h4>
-                <p class="black-dark">We are seeking a creative and detail-oriented front-end developer to join our growing tech team to build engaging user interfaces.</p> <!--need to update this-->
-                <p class="reports-to black-dark"><em><strong>Reports to:</strong> Lead Developer</em></p>
-    
-
-
-                <!-- Responsibility -->
-                <h4 class="pd-responsibility-title black-dark">Responsibilities</h4>
-                <ul class="pd-list black-dark">
-                    <li>Develop and optimize machine learning models</li>
-                    <li >Collaborate with cross-functional teams for AI integration</li>
-                    <li>Deploy AI models into production environments</li>
-                    <li>Conduct data analysis and experimentation</li>
-                </ul>
+        
 
 
 
-                <!-- Requirements -->
-                <h5 class="pd-requirements-title black-dark">Requirements</h5>
-                <ol class="pd-list black-dark">
-                    <li >Proficiency in HTML, CSS, JavaScript</li>
-                    <li>2+ years of professional front-end development experience</li>
-                    <li>Experience with React or Angular frameworks</li>
-                    <li>Strong problem-solving and communication skills</li>
-                    <li>Strong problem-solving skills</li>
-                </ol>
-                
-                
-                
-                <!-- Salary -->
-                <h4 class="pd-responsibility-title black-dark">Salary Range</h4>
-                <ul class="pd-list black-dark">
-                    <li>$70,000 - $90,000 per annum</li>
-                </ul>
-
-
-                <!-- Apply Now -->
-                <a href="apply.php" class="pd-apply-btn">Apply Now</a>
-                
-    
-            </section>
-        </div>
-
-
-        <!-- Job position 2 end -->
+        
 
 
 
 
-        <!-- Aside -->
+        
         
 
 
