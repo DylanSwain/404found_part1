@@ -41,7 +41,6 @@
                   <section class="about-student-ids">
                     <h2 class="barbara-blue">Members IDs</h2> 
                     <ul class="black-dark">
-                      <li class="about-text-bold">Samuel Bolton - 105911864</li>
                       <li class="about-text-bold">Md Sabbir Ahmed - 105092206</li>
                       <li class="about-text-bold">Dylan Swain - 105753312</li>
                     </ul>

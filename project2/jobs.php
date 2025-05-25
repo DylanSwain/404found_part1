@@ -148,7 +148,7 @@
                 }
             }
             else{
-                echo"<p>No friends</p>";
+                echo"<p>No jobs</p>";
             }
             mysqli_close($conn);
         }
