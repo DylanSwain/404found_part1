@@ -122,7 +122,7 @@ nav a {
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 1058px;
+    height: 1300px;
     border-radius: 7px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -130,6 +130,8 @@ nav a {
 .homepage_content {
     margin-bottom: 2em;
     padding: 1em;
+    font-size: 20px;
+
 }
 
 .homepage_content h1, .content h2 {
@@ -143,12 +145,13 @@ nav a {
 }
 
 
+
 .pd-index-title{
     text-align: center;
 }
 .pd-index-title h2{
     padding: 1.5em 0em;
-    font-size: 2em;
+    font-size: 3em;
 }
 .pd-index-title p{
     margin-bottom: 3em;
@@ -594,3 +597,145 @@ textarea{
 }
 
 /* -----------------------------About Style End-------------------------- */
+
+
+
+
+/* Login Page Styling Start*/
+
+.login-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px; /* Slightly increased padding */
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 7px;
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 2rem; /* Made heading larger */
+    color: #4682b4; /* SteelBlue */
+    margin-bottom: 1.2em;
+}
+
+.login-form p {
+    font-size: 1.3rem; /* Increased paragraph size */
+    color: #7f8c8d;
+}
+
+.login-form label {
+    font-size: 1.2rem; /* Larger labels */
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.login-form input {
+    width: 80%;
+    padding: 12px; /* Increased padding for better readability */
+    font-size: 1.3rem; /* Larger text inside inputs */
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Slightly more spacing */
+}
+
+.login-form input[type="submit"] {
+    font-size: 1.4rem; /* Bigger button text */
+    background-color: #34495e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: white;
+    color: #34495e;
+    border: 2px solid #34495e;
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+
+/* Login Page Styling End */
+
+
+/* Manage Page Styling Start */
+
+.manage-container {
+    max-width: 1200px;
+    margin: 60px auto; /* Increased top/bottom spacing */
+    padding: 40px; /* More padding for a spacious feel */
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15); /* Slightly deeper shadow for emphasis */
+    border-radius: 10px; /* Subtler rounded edges */
+}
+
+.manage-container h2 {
+    color: #4682b4; /* SteelBlue */
+    font-size: 2.5em; /* Increased font size */
+    margin-bottom: 1.5em; /* More spacing */
+    text-align: center;
+}
+
+.manage-container p {
+    font-size: 1.4em; /* Larger paragraph text */
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 2.5em; /* Increased bottom spacing */
+}
+
+.manage_content {
+    background-color: #f3f3f3; /* Slightly lighter gray for better contrast */
+    padding: 25px; /* More padding */
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    margin-bottom: 25px; /* Increased spacing between sections */
+}
+
+.manage_content h3 {
+    color: #2980b9;
+    font-size: 1.8em; /* Bigger section headings */
+    margin-bottom: 20px;
+}
+
+.manage_content label {
+    font-size: 1.3em; /* Larger labels */
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+}
+
+.manage_content input, .manage_content select {
+    width: 100%;
+    padding: 12px; /* More comfortable padding */
+    font-size: 1.2em; /* Bigger input text */
+    border: 2px solid gray;
+    border-radius: 7px;
+    margin-bottom: 20px; /* More spacing */
+}
+
+.manage_content input[type="submit"] {
+    background-color: #34495e;
+    color: white;
+    font-size: 1.4em; /* Bigger button text */
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 30px; /* More spacing above button */
+}
+
+.manage_content input[type="submit"]:hover {
+    background-color: white;
+    color: #34495e;
+    border: 2px solid #34495e;
+    transform: scale(1.1); /* Slightly larger hover effect */
+    transition: 0.3s;
+}
+
+/* Manage Page Styling End */

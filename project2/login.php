@@ -14,7 +14,7 @@ $query = "CREATE TABLE IF NOT EXISTS managers (
 mysqli_query($conn, $query);
 
 $username = "bob123";
-$plain_password = "bob123";
+$plain_password = "bob1123";
 
 // Check if `bob123` already exists
 $query = "SELECT * FROM managers WHERE username = ?";
@@ -24,7 +24,7 @@ mysqli_stmt_execute($stmt);
 $result = mysqli_stmt_get_result($stmt);
 
 if (!mysqli_fetch_assoc($result)) {
-    // Insert plaintext password (NOT recommended)
+    // Insert plaintext password 
     $query = "INSERT INTO managers (username, password) VALUES (?, ?)";
     $stmt = mysqli_prepare($conn, $query);
     mysqli_stmt_bind_param($stmt, "ss", $username, $plain_password);
@@ -46,9 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($row = mysqli_fetch_assoc($result)) {
         if ($password === $row['password']) {
             $_SESSION["manager"] = $username;
-            
-            // Redirect to manage.php after successful login
-            header("Location: manage.php");
+            header("Location: manage.php"); // Redirect to manage.php after successful login
             exit();
         } else {
             $error_message = "Incorrect username or password.";
@@ -63,13 +61,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Manager Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="team members, project team">
+    <meta name="description" content="About our team">
+    <meta name="author" content="Md Sabbir Ahmed">
+    <link rel="icon" href="../images/logo.png" type="image/icon">
     <link rel="stylesheet" href="../styles/styles.css">
+    <title>Manager Login</title>
 </head>
 <body>
 
 <header>
-    <?php include 'nav.inc';?>
+    <?php include 'nav.inc'; ?> <!-- Include the navigation bar -->
 </header>
 
 <main class="login-container">
@@ -92,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </main>
 
 <footer>
-    <?php include 'footer.inc';?>
+    <?php include 'footer.inc'; ?> <!-- Include the footer -->
 </footer>
 
 </body>
