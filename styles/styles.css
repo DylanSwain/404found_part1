@@ -334,6 +334,9 @@ nav a {
 nav ul li{
     margin: 15px 0;
 }
+.benefits{
+    width: 23%;
+    }
 
 }
 
@@ -383,7 +386,7 @@ body{
     width: 50%;
 }
 #apply_image{
-    width: 50%;
+    width: 48%;
     height: inherit;
     opacity:90%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -423,9 +426,30 @@ legend{
 }
 textarea{
     border: 2px solid gray;
-    width: 600px;    
+    width: 99%;    
     height: 50px;
 }
+.input-size{
+    height: 25px;
+
+}
+
+
+
+/* Apply responsive */
+
+@media screen and (max-width:992px) {
+    
+#apply_image{
+    display: none;
+}
+.form-container{
+    width: 100%;
+}
+
+}
+
+
 /* ---------------------------Apply style end------------------------ */
 
 
@@ -501,7 +525,7 @@ textarea{
 }
 .group-photo-img{
     border: 3px solid rgba(41, 127, 185, 0.753);
-    width: 90%;
+    width: 50%;
 }
 
 .about-contributions dt{
@@ -546,5 +570,27 @@ textarea{
     font-size: 0.95rem;
   }
 /* table end */
+
+
+
+@media screen and (max-width:992px) {
+    
+.gp-info-container, .contribution-container{
+    display: inline; 
+    gap: 2%;  
+}
+.about-group-info, 
+.about-student-ids, 
+.about-contributions, 
+.group-photo
+{
+    width: 95%;
+    margin-bottom: 15px;
+}
+.about-main{
+    width: 90%;
+}
+
+}
 
 /* -----------------------------About Style End-------------------------- */
