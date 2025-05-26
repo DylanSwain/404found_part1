@@ -61,7 +61,7 @@
                       <dd>Creating EOI table, Adding validated records to the eoi table, &amp; converted job description page dynamic with database.</dd>
               
                       <dt class="about-text-bold">Dylan Swain</dt>
-                      <dd>Home Page, Navigation Bar &amp; Home Page Footer</dd>
+                      <dd>Created the manage.php and login.php pages. </dd>
                     </dl>
                   </section>
                   <!-- contribution end -->
