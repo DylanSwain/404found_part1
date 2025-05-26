@@ -58,7 +58,7 @@
                       
               
                       <dt class="about-text-bold">Md Sabbir Ahmed</dt>
-                      <dd>Creating EOI table, Adding validated records to the eoi table, &amp; converted job description page dynamic with database.</dd>
+                      <dd>Created EOI table, Updated apply page to implement server-side data formate checking and to EOI record the table, converted job description page dynamic with database.</dd>
               
                       <dt class="about-text-bold">Dylan Swain</dt>
                       <dd>Home Page, Navigation Bar &amp; Home Page Footer</dd>
