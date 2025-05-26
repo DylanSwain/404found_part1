@@ -26,8 +26,8 @@
 
           <!-- reference number -->
             
-            <label for="job-ref">Job Reference Number:</label>
-        <select id="job-ref" class="input-size" name="job-ref" required>
+            <label for="job_ref">Job Reference Number:</label>
+        <select id="job_ref" class="input-size" name="job_ref" required>
           <option value="" disabled selected>Select</option>
           <option value="REF001">REF001</option>
           <option value="REF002">REF002</option>
@@ -43,11 +43,11 @@
         <input type="text" id="last_name" class="input-size" name="last_name" placeholder="Enter Last Name" required><br><br>
         
         <!-- birth date -->
-        <!-- <label for="dob">Date of Birth:</label>
-        <input type="text" id="dob" class="input-size" name="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required><br><br> -->
-
         <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" class="input-size" name="dob"  placeholder="dd/mm/yyyy" required><br><br>
+        <input type="text" id="dob" class="input-size" name="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required><br><br>
+
+        <!-- <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" class="input-size" name="dob"  placeholder="dd/mm/yyyy" required><br><br> -->
     
         <!-- gender -->
         <fieldset>
@@ -110,8 +110,8 @@
           <label for="python">Python</label>
         </fieldset><br>
     
-        <label for="other-skills">Other Skills:</label><br>
-        <textarea id="other-skills" name="other-skills" placeholder="Optional..."></textarea><br><br>
+        <label for="other_skills">Other Skills:</label><br>
+        <textarea id="other_skills" name="other_skills" placeholder="Optional..."></textarea><br><br>
     
         <input class="submit-btn" type="submit" value="Submit">
     </form>
