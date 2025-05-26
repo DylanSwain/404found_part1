@@ -55,11 +55,10 @@
                 <section class="about-contributions">
                     <h2 class="barbara-blue">Contributions</h2>
                     <dl class="black-dark">
-                      <dt class="about-text-bold">Samuel Bolton</dt>
-                      <dd>Job Application page</dd>
+                      
               
                       <dt class="about-text-bold">Md Sabbir Ahmed</dt>
-                      <dd>Position Descriptions page, About Page, Jobs Application Page Footer &amp; About Page Footer</dd>
+                      <dd>Creating EOI table, Adding validated records to the eoi table, &amp; converted job description page dynamic with database.</dd>
               
                       <dt class="about-text-bold">Dylan Swain</dt>
                       <dd>Home Page, Navigation Bar &amp; Home Page Footer</dd>
@@ -90,16 +89,12 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Samuel Bolton</td>
-                      <td>Web Design, Gaming</td>
-                    </tr>
-                    <tr>
                       <td>Md Sabbir Ahmed</td>
-                      <td>Music, Riding Bike, Travel</td>
+                      <td>Music, Riding Bike, Travel.</td>
                     </tr>
                     <tr>
                       <td>Dylan Swain</td>
-                      <td>Technology, Music, Cooking, Reading, Travelling, Anime/Manga</td>
+                      <td>Technology, Music, Cooking, Reading, Travelling, Anime/Manga.</td>
                     </tr>
                   </tbody>
                 </table>
