@@ -11,17 +11,7 @@
 </head>
     <body>
         <header>
-            <nav>
-                <img src="../images/logo.png" alt="NeuroByte Logo" class="logo">
-                <ul>
-                    <li class="link active"><a href="index.html">Home</a></li>
-                    <li class="link"><a href="jobs.html">Jobs</a></li>
-                    <li class="link"><a href="about.html">About</a></li>
-                    <li class="link">
-                        <a href="mailto:info@neurobyte.com.au">info@neurobyte.com.au</a>
-                    </li>
-                </ul>
-            </nav>
+             <?php include 'nav.inc';?>
         </header>
 
         <!--pd = Page Title -->
@@ -92,5 +82,6 @@
             <a href="https://github.com/DylanSwain/404found_part1" target="_blank">GitHub Repository</a>
             </div>
     </footer>
+
 </body>
 </html>

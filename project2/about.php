@@ -12,21 +12,11 @@
 </head>
 <body>
   <header>
-    <nav>
-        <img src="../images/logo.png" alt="NeuroByte Logo" class="logo">
-        <ul>
-            <li class="link"><a href="index.html">Home</a></li>
-            <li class="link"><a href="jobs.html">Jobs</a></li>
-            <li class="link active"><a href="about.html">About</a></li>
-            <li class="link">
-                <a href="mailto:info@neurobyte.com.au">info@neurobyte.com.au</a>
-            </li>
-        </ul>
-    </nav>
+    <?php include 'nav.inc';?>
 </header>
     
 
-        <main>
+        <main class="about-main">
             <section class="pd-join-title"> <!--pd = position description-->
                 <h2 class="black-dark">About Our Team</h2>
             </section>
@@ -51,7 +41,6 @@
                   <section class="about-student-ids">
                     <h2 class="barbara-blue">Members IDs</h2> 
                     <ul class="black-dark">
-                      <li class="about-text-bold">Samuel Bolton - 105911864</li>
                       <li class="about-text-bold">Md Sabbir Ahmed - 105092206</li>
                       <li class="about-text-bold">Dylan Swain - 105753312</li>
                     </ul>
@@ -66,14 +55,13 @@
                 <section class="about-contributions">
                     <h2 class="barbara-blue">Contributions</h2>
                     <dl class="black-dark">
-                      <dt class="about-text-bold">Samuel Bolton</dt>
-                      <dd>Job Application page</dd>
+                      
               
                       <dt class="about-text-bold">Md Sabbir Ahmed</dt>
-                      <dd>Position Descriptions page, About Page, Jobs Application Page Footer &amp; About Page Footer</dd>
+                      <dd>Created EOI table, Updated apply page to implement server-side data formate checking and to EOI record the table, converted job description page dynamic with database.</dd>
               
                       <dt class="about-text-bold">Dylan Swain</dt>
-                      <dd>Home Page, Navigation Bar &amp; Home Page Footer</dd>
+                      <dd>Created the manage.php and login.php pages. </dd>
                     </dl>
                   </section>
                   <!-- contribution end -->
@@ -101,16 +89,12 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Samuel Bolton</td>
-                      <td>Web Design, Gaming</td>
-                    </tr>
-                    <tr>
                       <td>Md Sabbir Ahmed</td>
-                      <td>Music, Riding Bike, Travel</td>
+                      <td>Music, Riding Bike, Travel.</td>
                     </tr>
                     <tr>
                       <td>Dylan Swain</td>
-                      <td>Technology, Music, Cooking, Reading, Travelling, Anime/Manga</td>
+                      <td>Technology, Music, Cooking, Reading, Travelling, Anime/Manga.</td>
                     </tr>
                   </tbody>
                 </table>
