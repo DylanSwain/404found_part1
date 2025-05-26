@@ -522,7 +522,7 @@ textarea{
 }
 .group-photo-img{
     border: 3px solid rgba(41, 127, 185, 0.753);
-    width: 90%;
+    width: 50%;
 }
 
 .about-contributions dt{
@@ -567,5 +567,27 @@ textarea{
     font-size: 0.95rem;
   }
 /* table end */
+
+
+
+@media screen and (max-width:992px) {
+    
+.gp-info-container, .contribution-container{
+    display: inline; 
+    gap: 2%;  
+}
+.about-group-info, 
+.about-student-ids, 
+.about-contributions, 
+.group-photo
+{
+    width: 95%;
+    margin-bottom: 15px;
+}
+.about-main{
+    width: 90%;
+}
+
+}
 
 /* -----------------------------About Style End-------------------------- */
