@@ -58,7 +58,7 @@
                       
               
                       <dt class="about-text-bold">Md Sabbir Ahmed</dt>
-                      <dd>Created EOI table, Updated apply page to implement server-side data formate checking and to EOI record the table, converted job description page dynamic with database.</dd>
+                      <dd>Created EOI table, Updated apply page to implement server-side data formate checking and store EOI record to the table, converted job description page dynamic with database.</dd>
               
                       <dt class="about-text-bold">Dylan Swain</dt>
                       <dd>Created the manage.php and login.php pages. </dd>
